@@ -32,6 +32,7 @@ def get_min_max(_data, _subject, _students=students):
 
 
 def get_above_average(_data, _subject, _students=students):
+
     _mean = np.mean(_data[:, _subject], axis=0)
 
     print(_students[np.where(_data[:, _subject] > _mean)[0]])
@@ -39,5 +40,5 @@ def get_above_average(_data, _subject, _students=students):
 
 if __name__ == '__main__':
     get_average(data)
-    get_min_max(data, _subject=np.where(subjects == 'მათემატიკა'))
-    get_above_average(data, _subject=np.where(subjects == 'ინგლისური'))
+    get_min_max(data, _subject=np.where(subjects == 'მათემატიკა')[0][0])
+    get_above_average(data, _subject=np.where(subjects == 'ინგლისური')[0][0])
