@@ -1,8 +1,8 @@
 import numpy as np
 from data_generator import generate_data, FULL_NAMES, SUBJECTS
 
-students = generate_data(FULL_NAMES, 10)
-subjects = np.concatenate((np.array(['ინგლისური', 'მათემატიკა']), generate_data(SUBJECTS, 1)))
+students = generate_data(FULL_NAMES, 100)
+subjects = np.concatenate((np.array(['ინგლისური', 'მათემატიკა']), generate_data(SUBJECTS, 3)))
 
 print(subjects)
 print(students)
