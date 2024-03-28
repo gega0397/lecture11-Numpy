@@ -39,5 +39,5 @@ def get_above_average(_data, _subject, _students=students):
 
 if __name__ == '__main__':
     get_average(data)
-    get_min_max(data, _subject=np.where(subjects == 'მათემატიკა')[0])
-    get_above_average(data, _subject=np.where(subjects == 'ინგლისური')[0])
+    get_min_max(data, _subject=np.where(subjects == 'მათემატიკა'))
+    get_above_average(data, _subject=np.where(subjects == 'ინგლისური'))
